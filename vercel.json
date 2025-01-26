@@ -1,6 +1,10 @@
 {
     "version": 2,
     "builds": [
-      { "src": "home.html", "use": "@vercel/static" }
+      {
+        "src": "home.html",
+        "use": "@vercel/static"
+      }
     ]
   }
+  
