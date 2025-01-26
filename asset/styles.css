@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 15vh;
 }
 header img{
     width: 130px;
@@ -96,7 +96,8 @@ a{
     text-decoration: none;
 }
 footer{
-    height: 100px;
+    height: 10vh;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,33 +108,40 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
+    margin-top: 10px;
     background: url(heroimage.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-.home .auth{
-    background-color:white;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .home .title{
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    height: 10%;
+    padding-top:90px;
+  
+}
+.home .auth{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin-top: 180px;
+
+}
+.home .auth p{
+    font-size: 0.7rem;
 }
 .home form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-size: larger;
     background-color: #CFEEF1;
     border-radius: 5px;
@@ -147,9 +155,9 @@ footer{
     align-items: center;
 }
 .home form label{
-    margin-left:-240px;
-    margin-right: 160px;
-    font-size: 1rem;
+    margin-left:-245px;
+    margin-right: 180px;
+    font-size: 0.8rem;
     transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
     cursor: url('tooth.png') 10 10, auto;
 }
@@ -157,14 +165,14 @@ footer{
     height: 30px;
     width: 80%;
     border: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: transparent;
     border-bottom: 2px solid black;
     transition:color 0.5s ease;
     cursor: url('tooth.png') 10 10, auto;
 }
 .home form input:not(input[type="submit"]):focus+label,input:not(input[type="submit"]):not(:placeholder-shown) + label {
-    transform:translateY(-22px);
+    transform:translateY(-16px);
     color: #02979D;
     
 }
@@ -179,26 +187,51 @@ footer{
     width: 80px;
     height: 40px;
     border-radius: 10px;
+    cursor: url('tooth.png') 10 10, auto;
 }
 .about{
+    height: 65vh;
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #02979D;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.about .container{
+    display: flex;
+    align-items: center;
     border-radius: 20px;
     display:flex ;
-    padding: 80px;
-    background-color: aqua;
+    background-color:white;
+    width: 100%;
 
 }
+
 .about img{
-    background-color: white;
-    height: 600px;
+   
+    height: 350px;
+}
+
+@media(max-width:1000px){
+    .about img{
+        
+        height:100px;
+    }
 }
 .about div{
     width: 800px;
-    height: 600px;   background-color:white;
+    height: 400px;  
     overflow: hidden;
+    
 }
 .about p{
 color:blue;
 overflow: hidden;
+font-size:0.65rem;
+text-align: justify;
+padding:15px ;
+max-width: 600px;
 }
 .services{
     border-radius: 20px;
@@ -211,24 +244,23 @@ overflow: hidden;
 height: 30%;
 }
 .services .container{
-    height: 50%;
+    height: 55%;
     display: flex;
     gap: 50px;
     margin-top: 100px;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    padding: 30px;
+    padding: 10px;
     
 }
 .services .card{
- height: 100%;
- max-width: 300px;
- min-width: 300px;
+
+ max-width: 200px;
+ min-width: 200px;
  border-radius: 10px;
  display: flex;
  flex-direction:column ;
- justify-content: space-around;
  align-items: center;
  background-color: #CFEEF1;
  transition: 400ms ease-in-out;
@@ -238,17 +270,19 @@ height: 30%;
   transform: scale(1.05,1.05);
 }
 .services h2{
+    font-size: 0.8rem;
     color: blue;
 }
 .services img{
-    height:90%;
-    width:80%;
+
+    width:170px;
     padding: 20px;
     border-radius: 30px;
 }
 .services p{
     text-align: justify;
     width:70%;
+    font-size: 0.5rem;
 }
 .contact{
     border-radius: 20px;
