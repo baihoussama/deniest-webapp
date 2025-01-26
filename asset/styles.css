@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15%;
+    height: 15vh;
 }
 header img{
     width: 130px;
@@ -96,12 +96,12 @@ a{
     text-decoration: none;
 }
 footer{
-    height: 12%;
+    height: 5vh;
     z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .home{
     border-radius: 20px;
@@ -109,7 +109,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 70vh;
     margin-top: 10px;
     background: url(heroimage.jpeg);
     background-size: cover;
@@ -120,8 +120,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
-    margin-top: 100px;
+    height: 30%;
+    margin-top: 150px;
    
   
 }
@@ -134,7 +134,8 @@ footer{
     width: 100%;
     height: 40%;
     padding-bottom: 50px;
-    margin-top:150px ;
+    padding-top: 50px;
+    margin-top:130px ;
 
 }
 .home .auth p{
@@ -193,7 +194,7 @@ footer{
     cursor: url('tooth.png') 10 10, auto;
 }
 .about{
-    height: 65vh;
+    height: 64vh;
     margin-top: 10px;
     padding: 30px;
     background-color: #02979D;
@@ -238,7 +239,7 @@ max-width: 600px;
 }
 .services{
     border-radius: 20px;
-    height: 80vh;
+    height: 70vh;
     background: url(heroimage.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,7 +255,7 @@ height: 30%;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    padding: 10px;
+    padding: 6px;
     
 }
 .services .card{
@@ -292,7 +293,7 @@ height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     background: url(heroimage.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
